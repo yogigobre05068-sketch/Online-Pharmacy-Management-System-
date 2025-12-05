@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Adminmasterpage.master.cs" Inherits="Admin_Adminmasterpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1200px;
+            border: 1px solid #FF0000;
+        }
+        .style2
+        {
+            width: 1200px;
+        }
+        .style3
+        {
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td height="150" width="200">
+                            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Images/1.jpg" 
+                                Width="200px" />
+                        </td>
+                        <td height="150" style="background-color: #00CC00" width="800">
+                            <h1 style="text-align: center; background-color: #FF0066; color: #FFFFFF;">
+                                Pharmacy System</h1>
+                        </td>
+                        <td height="150" width="200">
+                            <asp:Image ID="Image2" runat="server" Height="150px" ImageUrl="~/Images/11.jpg" 
+                                Width="200px" />
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td height="30" width="1200">
+                            <marquee style="background-color: #FF9933">Welcome to Admin Page</marquee></td>
+                    </tr>
+                    <tr>
+                        <td height="30" style="background-color: #66FFFF" width="1200">
+                            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                                StaticSubMenuIndent="16px" 
+                                style="font-size: large; font-weight: 700; color: #FF0000;">
+                                <Items>
+                                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Admin/Adminhome.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Admin Login" Value="Admin Login" 
+                                        NavigateUrl="~/Admin/Adminlogin.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Add Products" Value="Add Products" 
+                                        NavigateUrl="~/Admin/Addproducts.aspx">
+                                        <asp:MenuItem Text="View Products" Value="View Products" 
+                                            NavigateUrl="~/Admin/vievproducttablets.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Add Stock " Value="Add Stock " 
+                                        NavigateUrl="~/Admin/addstocksdetails.aspx">
+                                        <asp:MenuItem Text="View Stock" Value="View Stock" 
+                                            NavigateUrl="~/Admin/viestockdetails.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Add Dealars" Value="Add Dealars" 
+                                        NavigateUrl="~/Admin/adddealarsdetails.aspx">
+                                        <asp:MenuItem Text="View Dealars" Value="View Dealars" 
+                                            NavigateUrl="~/Admin/viewdealersdetails.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Add Bill" Value="Add Purchase" 
+                                        NavigateUrl="~/Admin/billdetails.aspx">
+                                        <asp:MenuItem Text="View Bill" Value="View Purchase " 
+                                            NavigateUrl="~/Admin/vievbilldetails.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Add Sale " Value="Add Sale " 
+                                        NavigateUrl="~/Admin/saledetails.aspx">
+                                        <asp:MenuItem Text="View Sale" Value="View Sale" 
+                                            NavigateUrl="~/Admin/vievsaledetails.aspx"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                    <asp:MenuItem Text="Logout" Value="Logout" 
+                                        NavigateUrl="~/Admin/Adminlogin.aspx"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td height="500" width="600">
+                            <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>&nbsp;</td>
+                        <td height="500" width="600">
+                            <asp:Image ID="Image3" runat="server" Height="500px" 
+                                ImageUrl="~/Images/pharmace.gif" Width="600px" />
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td height="200" width="200">
+                            <asp:Image ID="Image4" runat="server" Height="200px" ImageUrl="~/Images/14.jpg" 
+                                Width="200px" />
+                        </td>
+                        <td height="200" width="200">
+                            <asp:Image ID="Image5" runat="server" Height="200px" ImageUrl="~/Images/32.jpg" 
+                                Width="200px" />
+                        </td>
+                        <td height="200" width="200">
+                            <asp:Image ID="Image6" runat="server" Height="200px" ImageUrl="~/Images/4.png" 
+                                Width="200px" />
+                        </td>
+                        <td height="200" width="200">
+                            <asp:Image ID="Image7" runat="server" Height="200px" ImageUrl="~/Images/9.jpg" 
+                                Width="200px" />
+                        </td>
+                        <td height="200" width="200">
+                            <asp:Image ID="Image8" runat="server" Height="200px" ImageUrl="~/Images/3.jpg" 
+                                Width="200px" />
+                        </td>
+                        <td>
+                            <asp:Image ID="Image9" runat="server" Height="200px" ImageUrl="~/Images/33.jpg" 
+                                Width="200px" />
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td class="style3" height="30">
+                            Copyrights@2024</td>
+                    </tr>
+                    <tr>
+                        <td height="30">
+                           <marquee style="color: #CC3300"> Welcome to Shree Web Pharmacy Online Automation System
+</marquee>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+        </tr>
+    </table>
+    
+    </form>
+</body>
+</html>
